@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+h=0
+m=1
+#while [[ $m -le 60 ]];
+#do
+	#echo "$m"
+	#m=$(($m + 1))
+	#while [[ $h -le 12 ]];
+	#do
+		#echo "Hour: $h"
+		#h=$(($h + 1))
+	#done
+#done
+
+while [[ $h -ne 12 ]];
+do
+	h=$(($h + 1))
+	if [[ $h -ne 12 ]];then
+	#echo "Hour: $h"
+		while [[ $m -le 60 ]];
+		do
+			echo "$m"
+			m=$(($m + 1))
+		done
+		continue
+	fi
+done
+
