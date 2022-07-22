@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+LIST="$(ls $PWD | cut -d '-' -f 2)"
+for i in $LIST;
+do
+	echo "$i"
+done

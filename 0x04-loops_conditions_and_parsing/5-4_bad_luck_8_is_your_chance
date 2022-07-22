@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# print "Best School" 10 times to stdout but for the 4th and 8th iteration, print bad luck and good luck respectively
+i=0
+while [[ $i -ne 10 ]];
+do
+	i=$(($i + 1))
+	if [[ $i == 4 ]];then
+		echo "bad luck"
+	elif [[ $i == 8 ]];then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+done
