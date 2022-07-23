@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# nested if statement
 if [[ -a './school' ]] && [[ ! -s './school' ]];
 then
 	echo -e "school file exists\nschool file is empty"
